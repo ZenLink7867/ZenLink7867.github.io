@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rank de Pontos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rank de Pontos</h1>
+        <div id="loginSection">
+            <button onclick="fazerLogin()">Login</button>
+        </div>
+        <table id="rankTable">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Participante</th>
+                    <th>Pontos</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados dos participantes serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+        <div class="admin-section" id="adminSection">
+            <h2>Administração</h2>
+            <label for="participantName">Nome do Participante:</label>
+            <input type="text" id="participantName" placeholder="Nome">
+
+            <label for="participantPoints">Pontos:</label>
+            <input type="number" id="participantPoints" placeholder="Pontos">
+
+            <button onclick="adicionarParticipante()">Adicionar Participante</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
